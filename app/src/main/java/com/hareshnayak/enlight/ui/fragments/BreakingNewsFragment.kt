@@ -1,4 +1,4 @@
-package com.hareshnayak.enlight
+package com.hareshnayak.enlight.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

@@ -1,7 +1,8 @@
-package com.hareshnayak.enlight
+package com.hareshnayak.enlight.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hareshnayak.enlight.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

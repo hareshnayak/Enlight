@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Enlight/app/src/main/res/drawable/ic_breaking_news.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Enlight/app/src/main/res/drawable/ic_favourite.xml" value="0.24114583333333334" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Enlight/app/src/main/res/layout/activity_main.xml" value="0.14" />
         <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Enlight/app/src/main/res/layout/fragment_article.xml" value="0.33" />
+        <entry key="..\:/Users/Lenovo/AndroidStudioProjects/Enlight/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.11041666666666666" />
       </map>
     </option>
   </component>
