@@ -1,4 +1,4 @@
-package com.hareshnayak.enlight
+package com.hareshnayak.enlight.modals
 
 data class NewestResponse(
     val articles: List<Article>,

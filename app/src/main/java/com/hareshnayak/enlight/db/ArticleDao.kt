@@ -2,7 +2,7 @@ package com.hareshnayak.enlight.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.hareshnayak.enlight.Article
+import com.hareshnayak.enlight.modals.Article
 
 @Dao
 interface ArticleDao {

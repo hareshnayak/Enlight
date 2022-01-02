@@ -1,4 +1,4 @@
-package com.hareshnayak.enlight
+package com.hareshnayak.enlight.modals
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

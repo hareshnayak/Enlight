@@ -1,4 +1,4 @@
-package com.hareshnayak.enlight
+package com.hareshnayak.enlight.modals
 
 data class Source(
     val id: Any,

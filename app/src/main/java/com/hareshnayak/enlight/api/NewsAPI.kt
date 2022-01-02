@@ -1,6 +1,6 @@
 package com.hareshnayak.enlight.api
 
-import com.hareshnayak.enlight.NewestResponse
+import com.hareshnayak.enlight.modals.NewestResponse
 import com.hareshnayak.enlight.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
