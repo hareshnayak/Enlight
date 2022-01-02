@@ -1,0 +1,11 @@
+package com.hareshnayak.enlight.ui
+
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import com.hareshnayak.enlight.repository.NewsRepository
+
+class NewsViewModelProviderFactory(val newsRepository: NewsRepository) : ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return NewsViewModel(newsRepository) as T
+    }
+}
