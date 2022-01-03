@@ -14,7 +14,11 @@
     <fragment
         android:id="@+id/article"
         android:name="com.hareshnayak.enlight.ui.fragments.ArticleFragment"
-        android:label="Article" />
+        android:label="Article" >
+        <argument
+            android:name="article"
+            app:argType="com.hareshnayak.enlight.modals.Article" />
+    </fragment>
     <fragment
         android:id="@+id/savedNews"
         android:name="com.hareshnayak.enlight.ui.fragments.SavedNewsFragment"

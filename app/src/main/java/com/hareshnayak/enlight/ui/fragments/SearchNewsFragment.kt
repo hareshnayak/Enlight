@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.ProgressBar
 import androidx.core.widget.doAfterTextChanged
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.hareshnayak.enlight.R
@@ -31,6 +32,16 @@ class SearchNewsFragment : Fragment(R.layout.fragment_search_news) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = (activity as MainActivity).viewModel
         setupRecyclerView()
+
+        newsAdapter.setOnItemClickListener {
+            val bundle = Bundle().apply {
+                putSerializable("article",it)
+            }
+            findNavController().navigate(
+                R.id.action_searchNews_to_article,
+                bundle
+            )
+        }
 
         var job: Job? = null
         view.findViewById<EditText>(R.id.etSearch).doAfterTextChanged { editable ->
