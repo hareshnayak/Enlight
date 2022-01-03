@@ -24,7 +24,7 @@ class ArticleFragment : Fragment(R.layout.fragment_article) {
         val article = args.article
         requireView().findViewById<WebView>(R.id.webView).apply{
             webViewClient = WebViewClient()
-            loadUrl(article.url)
+            loadUrl(article.url!!)
         }
 
         requireView().findViewById<FloatingActionButton>(R.id.fab).setOnClickListener{
