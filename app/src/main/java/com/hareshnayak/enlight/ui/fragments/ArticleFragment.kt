@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.navigation.fragment.navArgs
+import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.snackbar.Snackbar
 import com.hareshnayak.enlight.R
 import com.hareshnayak.enlight.ui.MainActivity
 import com.hareshnayak.enlight.ui.NewsViewModel
@@ -24,5 +26,11 @@ class ArticleFragment : Fragment(R.layout.fragment_article) {
             webViewClient = WebViewClient()
             loadUrl(article.url)
         }
+
+        requireView().findViewById<FloatingActionButton>(R.id.fab).setOnClickListener{
+            viewModel.saveArticle(article)
+            Snackbar.make(view,"Article saved successfully", Snackbar.LENGTH_SHORT).show()
+        }
+
     }
 }

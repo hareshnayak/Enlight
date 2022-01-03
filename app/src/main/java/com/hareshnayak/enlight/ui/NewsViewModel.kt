@@ -3,6 +3,7 @@ package com.hareshnayak.enlight.ui
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.hareshnayak.enlight.modals.Article
 import com.hareshnayak.enlight.modals.NewestResponse
 import com.hareshnayak.enlight.repository.NewsRepository
 import com.hareshnayak.enlight.util.Resource
@@ -51,5 +52,13 @@ class NewsViewModel(
             }
         }
         return Resource.Error(response.message())
+    }
+
+    fun saveArticle(article: Article) = viewModelScope.launch {
+        newsRepository.upsert(article)
+    }
+    fun getSavedNews() = newsRepository.getSavedNews()
+    fun deleteArticle(article: Article) = viewModelScope.launch {
+        newsRepository.deleteArticle(article)
     }
 }
