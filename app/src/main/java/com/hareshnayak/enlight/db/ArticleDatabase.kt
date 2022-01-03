@@ -13,15 +13,19 @@ import com.hareshnayak.enlight.modals.Article
 )
 
 @TypeConverters(Converters::class)
-abstract class ArticleDatabase : RoomDatabase(){
-    abstract fun getArticleDao():ArticleDao
-    companion object{
-        private var instance: ArticleDatabase?=null
+abstract class ArticleDatabase : RoomDatabase() {
+    abstract fun getArticleDao(): ArticleDao
+
+    companion object {
+        private var instance: ArticleDatabase? = null
         private val LOCK = Any()
 
-        operator fun invoke(context: Context) = instance?: synchronized(LOCK){
-            instance?: createDatabase(context).also{ instance = it}
+        operator fun invoke(context: Context): ArticleDatabase {
+            return instance ?: synchronized(LOCK) {
+                instance ?: createDatabase(context).also { instance = it }
+            }
         }
+
         private fun createDatabase(context: Context) = Room.databaseBuilder(
             context.applicationContext,
             ArticleDatabase::class.java,

@@ -9,7 +9,7 @@ import com.hareshnayak.enlight.R
 import com.hareshnayak.enlight.ui.MainActivity
 import com.hareshnayak.enlight.ui.NewsViewModel
 
-class SavedNews : Fragment(R.layout.fragment_saved_news) {
+class SavedNewsFragment : Fragment(R.layout.fragment_saved_news) {
     lateinit var viewModel: NewsViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

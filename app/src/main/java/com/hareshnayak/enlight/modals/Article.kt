@@ -3,9 +3,7 @@ package com.hareshnayak.enlight.modals
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(
-    tableName = "Articles"
-)
+@Entity(tableName = "articles")
 data class Article(
     @PrimaryKey(autoGenerate = true)
     var id : Int? = null,

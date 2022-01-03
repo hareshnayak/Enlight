@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph"
     app:startDestination="@id/breakingNews">
 
     <fragment
         android:id="@+id/breakingNews"
-        android:name="com.hareshnayak.enlight.ui.fragments.BreakingNews"
+        android:name="com.hareshnayak.enlight.ui.fragments.BreakingNewsFragment"
         android:label="BreakingNews" >
         <action
             android:id="@+id/action_breakingNews_to_article"
@@ -14,11 +13,11 @@
     </fragment>
     <fragment
         android:id="@+id/article"
-        android:name="com.hareshnayak.enlight.ui.fragments.Article"
+        android:name="com.hareshnayak.enlight.ui.fragments.ArticleFragment"
         android:label="Article" />
     <fragment
         android:id="@+id/savedNews"
-        android:name="com.hareshnayak.enlight.ui.fragments.SavedNews"
+        android:name="com.hareshnayak.enlight.ui.fragments.SavedNewsFragment"
         android:label="SavedNews" >
         <action
             android:id="@+id/action_savedNews_to_article"
@@ -26,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/searchNews"
-        android:name="com.hareshnayak.enlight.ui.fragments.SearchNews"
+        android:name="com.hareshnayak.enlight.ui.fragments.SearchNewsFragment"
         android:label="SearchNews" >
         <action
             android:id="@+id/action_searchNews_to_article"
